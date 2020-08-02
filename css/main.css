@@ -113,6 +113,10 @@ header .contacts-link {
     margin-left: 50px;
 
 }
+.contacts-header .item:hover{
+    color: var(--accent-color);
+
+}
 
 header .contacts-link:hover,
 .contacts-link:focus,
@@ -120,12 +124,14 @@ header .contacts-link:hover,
     color: var(--accent-color);
 }
 
-.contacts-header .envelope-icon {
-    width: 16px;
-    height: 11.2px;
-    fill: var(--title-text-color);
-    background-color: red;
+.contacts-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.icon-header {
+    margin-right: 10px;
 }
 
 .hero {
@@ -189,33 +195,18 @@ header .contacts-link:hover,
     width: calc((100% - 90px)/ 4);
 }
 
-.advent::before {
-    display: block;
-    content: "";
+
+.svg-advent {
+    width: 270px;
     height: 120px;
-
-    background-size: 70px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-color: #F5F4FA;
+    background: #F5F4FA;
     border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 }
 
-.icon-antenna::before {
-    background-image: url(../img1/advent/antenna.svg);
-}
-
-.icon-clock::before {
-    background-image: url(../img1/advent/clock.svg);
-}
-
-.icon-diagram::before {
-    background-image: url(../img1/advent/diagram.svg);
-}
-
-.icon-astronaut::before {
-    background-image: url(../img1/advent/astronaut.svg);
-}
 
 .text .advent+.advent {
     margin-left: 30px;
@@ -331,6 +322,21 @@ h3 {
 
 .networks {
     display: flex;
+    justify-content: center;
+    margin-top: 16px;
+    margin-bottom: 24px;
+}
+
+.networks .item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;.
+}
+.networks .icon{
+    fill: #AFB1B8;
 }
 
 /*клиенты */
@@ -364,10 +370,20 @@ h3 {
 
 }
 
-.icon-client{
-    width: 150px;
-    height: 150px;
+.client .link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 90px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
 }
+
+.client .link:hover{
+    color: var(--accent-color);
+}
+
 
 /*футер*/
 
@@ -401,39 +417,28 @@ footer {
     margin-left: 10px;
 }
 
-/*.sign-networks .link{
-    display:flex;
-    margin: 0px 0px;
+.sign-networks .link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 44px;
     width: 44px;
-    
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 20px;
-
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 50%;
-
-}
-
-.sign-networks .instagram{
-    background-image: url(../img1/icon/socialnetworks/instagram.svg);
-}
-.sign-networks .twitter{
-    background-image: url(../img1/icon/socialnetworks/twitter.svg);
-}
-.sign-networks .facebook{
-    background-image: url(../img1/icon/socialnetworks/facebook.svg);
-}
-.sign-networks .linkedin{
-    background-image: url(../img1/icon/socialnetworks/linkedin.svg);
 }
 
 .sign-networks .link:hover ,
-.link:focus ,
-.link:active {
+.sign-networks .link:focus ,
+.sign-networks .link:active{
     background-color: var(--accent-color);
-}*/
+}
+
+.sign-networks .icon {
+    fill: var(--focus-color);
+
+}
+
+
 
 footer .button {
 
@@ -454,17 +459,6 @@ footer .button {
     letter-spacing: 0.06em;
     color: var(--focus-color);
     background: var(--accent-color);
-}
-
-footer .button::after {
-    content: "";
-    width: 24px;
-    height: 24px;
-    margin-left: 10px;
-    background-image: url(../img1/icon/iconsend.svg);
-    /* background-color: red;*/
-    background-size: contain;
-
 }
 
 
@@ -500,6 +494,9 @@ footer>address {
     font-style: normal;
 }
 
+.icon-iconsend{
+    margin-left: 10px;
+}
 .sign {
     text-transform: uppercase;
     display: block;
