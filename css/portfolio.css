@@ -27,7 +27,7 @@ body {
 
 .container {
     width: 1200px;
-    padding-left:15px;
+    padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
@@ -44,6 +44,7 @@ body {
     display: flex;
     align-items: center;
 }
+
 .nav {
     border: 1px solid #ECECEC;
     padding-top: 24px;
@@ -125,7 +126,7 @@ header .contacts-link:hover,
 
 /*Портфолио */
 
-.page-portfolio{
+.page-portfolio {
     padding-top: 93px;
     padding-bottom: 94px;
     /*background-color: violet;*/
@@ -221,21 +222,59 @@ footer {
     padding-top: 60px;
     padding-bottom: 60px;
 
-   background: #2F303A;
-   font-size: 14px;
-   line-height: 1.14;
-   color: var(--focus-color);
+    background: #2F303A;
+    font-size: 14px;
+    line-height: 1.14;
+    color: var(--focus-color);
 }
 
-.box .logo{
+.box .logo {
     display: inline-block;
     margin-bottom: 20px;
 }
 
-.footer-networks {
+.sign-networks {
     display: flex;
 
 }
+
+/*.sign-networks .link {
+    display: flex;
+    height: 44px;
+    width: 44px;
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+}
+
+.sign-networks .item+.item {
+    margin-left: 10px;
+}
+
+.sign-networks .instagram {
+    background-image: url(../img1/icon/socialnetworks/instagram.svg);
+}
+
+.sign-networks .twitter {
+    background-image: url(../img1/icon/socialnetworks/twitter.svg);
+}
+
+.sign-networks .facebook {
+    background-image: url(../img1/icon/socialnetworks/facebook.svg);
+}
+
+.sign-networks .linkedin {
+    background-image: url(../img1/icon/socialnetworks/linkedin.svg);
+}
+
+.sign-networks .link:hover,
+.link:focus,
+.link:active {
+    background-color: var(--accent-color);
+}*/
 
 .footer-box {
     display: flex;
@@ -246,7 +285,7 @@ footer {
     width: calc(100% / 4);
 }*/
 
-footer .button{
+footer .button {
 
     border-radius: 4px;
     justify-content: center;
@@ -258,11 +297,21 @@ footer .button{
     font-size: 16px;
     line-height: 1.875;
     display: flex;
-    
+
     letter-spacing: 0.06em;
     color: var(--focus-color);
     background: var(--accent-color);
 
+}
+
+footer .button::after {
+    content: "";
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+    /*background-image: url(../img1/icon/iconsend.svg);*/
+    /* background-color: red;*/
+    background-size: contain;
 }
 
 
@@ -300,5 +349,7 @@ footer>address {
 
 .sign {
     text-transform: uppercase;
-    
+    margin-bottom: 20px;
+    display: block;
+
 }
