@@ -96,6 +96,7 @@ body {
     margin-left: auto;
 
 }
+
 .icon-header {
     margin-right: 10px;
 }
@@ -194,8 +195,13 @@ header .contacts-link:hover,
     margin-right: 0;
 }
 
+.work-case.work-name {
+    padding: 20px 24 px;
+}
+
 .work-title {
 
+    margin: 0px 0px;
     font-family: Roboto;
     font-style: normal;
     font-weight: bold;
@@ -203,6 +209,10 @@ header .contacts-link:hover,
     line-height: 2.0;
     letter-spacing: 0.06em;
     color: #212121;
+}
+
+.work-desk {
+    margin: 0px 0px;
 }
 
 .work {
@@ -243,7 +253,7 @@ footer {
     display: flex;
 }
 
-.sign-networks .link{
+.sign-networks .link {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -254,16 +264,17 @@ footer {
 
 }
 
-.sign-networks .link:hover , 
- .sign-networks.link:focus , 
- .sign-networks.link:active {
-background-color: var(--accent-color);
+.sign-networks .link:hover,
+.sign-networks.link:focus,
+.sign-networks.link:active {
+    background-color: var(--accent-color);
 }
 
-.sign-networks .icon{
+.sign-networks .icon {
     fill: var(--focus-color);
 }
-.sign-networks .item{
+
+.sign-networks .item {
     margin-right: 10px;
 }
 
@@ -325,7 +336,7 @@ footer>address {
     font-style: normal;
 }
 
-.icon-iconsend{
+.icon-iconsend {
     margin-left: 10px;
 }
 
