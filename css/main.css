@@ -113,7 +113,8 @@ header .contacts-link {
     margin-left: 50px;
 
 }
-.contacts-header .item:hover{
+
+.contacts-header .item:hover {
     color: var(--accent-color);
 
 }
@@ -132,6 +133,7 @@ header .contacts-link:hover,
 
 .icon-header {
     margin-right: 10px;
+    fill: currentColor;
 }
 
 .hero {
@@ -325,20 +327,37 @@ h3 {
 .networks {
     display: flex;
     justify-content: center;
+    align-items: center;
     margin-top: 16px;
     margin-bottom: 24px;
 }
 
-.networks .item{
+.networks .link {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 44px;
     height: 44px;
-    border-radius: 50%;.
+    border-radius: 50%;
+    color: #AFB1B8;
+    background-color: var(--focus-color);
+
 }
-.networks .icon{
-    fill: #AFB1B8;
+
+.networks .item+.item {
+    margin-left: 10px;
+}
+
+.networks .link:hover,
+.networks .link:focus,
+.networks .link:active {
+    color: var(--focus-color);
+    background-color: var(--accent-color);
+}
+
+
+.networks .icon {
+    fill: currentColor;
 }
 
 /*клиенты */
@@ -380,12 +399,18 @@ h3 {
     height: 90px;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
+    color: #AFB1B8;
+
 }
 
-.client .link:hover{
+.client .link:hover {
     color: var(--accent-color);
+    border: 1px solid var(--accent-color);
 }
 
+.client .icon-client {
+    fill: currentColor;
+}
 
 /*футер*/
 
@@ -429,9 +454,9 @@ footer {
     border-radius: 50%;
 }
 
-.sign-networks .link:hover ,
-.sign-networks .link:focus ,
-.sign-networks .link:active{
+.sign-networks .link:hover,
+.sign-networks .link:focus,
+.sign-networks .link:active {
     background-color: var(--accent-color);
 }
 
@@ -496,9 +521,10 @@ footer>address {
     font-style: normal;
 }
 
-.icon-iconsend{
+.icon-iconsend {
     margin-left: 10px;
 }
+
 .sign {
     text-transform: uppercase;
     display: block;
