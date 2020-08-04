@@ -155,6 +155,7 @@ header .contacts-link:hover,
     border-radius: 4px;
     margin-bottom: 50px;
 
+    font-family: Roboto;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
@@ -172,6 +173,7 @@ header .contacts-link:hover,
         0px 1px 2px rgba(0, 0, 0, 0.08),
         0px 2px 2px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
+    outline: none;
 }
 
 .work-list {
@@ -324,6 +326,18 @@ footer .button {
 
 }
 
+.icon-iconsend {
+    fill: currentColor;
+}
+
+footer .button:hover,
+footer .button:focus,
+footer .button:active {
+    color: var(--accent-color);
+    background-color: var(--focus-color);
+    border: 1px solid var(--accent-color);
+    outline: none;
+}
 
 footer .contacts-item {
     font-size: 14px;
